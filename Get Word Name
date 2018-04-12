@@ -1,0 +1,17 @@
+// Count the number of words in a string.
+
+
+function getLastItem(arr) {
+  return arr[arr.length - 1]
+}
+
+//or 
+
+function getLastItem(arr) {
+  return arr.pop();
+}
+
+//or
+
+
+const getLastItem = arr => arr[arr.length - 1];
