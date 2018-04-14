@@ -1,0 +1,15 @@
+function alternatingCaps(str) {
+	var result = "";
+  
+  for(var i = 0; i < str.length; i++) {
+    if(i % 2 != 0) {
+      result += str.charAt(i).toLowerCase();
+    } else {
+      result += str.charAt(i).toUpperCase();
+    }
+  }
+  
+ return result;
+}
+
+alternatingCaps('John is a woderful programmer.);
