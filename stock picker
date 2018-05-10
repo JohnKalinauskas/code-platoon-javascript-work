@@ -1,0 +1,15 @@
+exports.picker = function(prices) {
+  let delta = 0
+  let difference = []
+  for (var high = 0; high < prices.length; high++) {
+    for (var low = 0; low < prices.length; low++) {
+      if (high < low) {
+        if (prices[low] - prices[high] > delta) {
+          delta = prices[low] - prices[high]
+          difference = [high, low]
+        }
+      }
+    }
+  }
+  return difference
+}
