@@ -1,0 +1,13 @@
+export function charCount(str) {
+  let char_hash = {};
+  const modifiedString = str.toLowerCase().replace(/ /g, '');
+  for (let i = 0; i < modifiedString.length; i++) {
+    if (char_hash[modifiedString[i]]) {
+      char_hash[modifiedString[i]] += 1;
+    }
+    else {
+      char_hash[modifiedString[i]] = 1;
+    }
+  }
+  return char_hash;
+}
