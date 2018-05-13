@@ -1,0 +1,8 @@
+// pretty simple bit of code...
+
+
+exports.palindrome = function(word) {
+    let cleanedWords = word.toString().toLowerCase().replace(/[^0-9.]/g, '')
+    let reverseWords = cleanedWords.split('').reverse().join('')
+    return cleanedWords === reverseWords
+};
